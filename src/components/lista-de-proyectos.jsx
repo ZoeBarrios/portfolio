@@ -1,6 +1,6 @@
 import { PROYECTOS } from "../../Utils";
 import Proyecto from "./proyecto";
-import "../stylesheets/proyectos.css";
+import "../stylesheets/proyectos-estilos.css";
 
 export default function ListaDeProyectos({ filter = [] }) {
   let proyectosMostrar = PROYECTOS;

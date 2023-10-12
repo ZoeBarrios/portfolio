@@ -115,9 +115,18 @@ li::before {
 }
 
 @media screen and (min-width: 1024px) {
-  .info h1,
+  .info-proyect {
+    width: 70%;
+  }
+  .info h2 {
+    font-size: 2em;
+  }
   p {
-    font-size: larger;
+    font-size: 2em;
+  }
+
+  li {
+    font-size: 1.5em;
   }
 }
 

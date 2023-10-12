@@ -112,7 +112,6 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-
 @media screen and (min-width: 1024px) {
   .hamburger {
     width: 4em;
@@ -120,7 +119,7 @@
   }
 
   .hamburger-menu__line {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .linea {
@@ -136,6 +135,4 @@
   .linea2 {
     width: 100%;
   }
-}
-  
 }
