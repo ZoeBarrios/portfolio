@@ -2,7 +2,7 @@ export const PROYECTOS = {
   1: {
     nombre: "Juego de la memoria",
     descripcion:
-      "Es un juego del a memoria que presenta 3 niveles de dificultad y permite almacenar en el navegador los usuarios y puntuaciones de los mismos.",
+      "Es un juego de la memoria que presenta 3 niveles de dificultad y permite almacenar en el navegador los usuarios y puntuaciones de los mismos.",
     deploy: "https://juego-memoria-neon.vercel.app/",
     github: "https://github.com/ZoeBarrios/JuegoMemoria",
     img: "/img/proyectos/memoria.png",
@@ -11,7 +11,7 @@ export const PROYECTOS = {
   2: {
     nombre: "Foro Alura",
     descripcion:
-      "Es una api que nos permite crear y loguear usuarios(JWT token) y crear,eliminar,actualizar y obtener topicos, respuestas y cursos, simulando la funcionabilidad de un foro. Hecho con Java Spring Boot.",
+      "Es una api que simula el funcionamiento de un foro y permite controlar el acceso de los usuarios con JWT. Hecho con Java Spring Boot.",
     github: "https://github.com/ZoeBarrios/Alura_Foro",
     img: "/img/proyectos/foro.png",
     tecnologias: ["Spring Boot", "JWT", "Postman", "MySQL"],
