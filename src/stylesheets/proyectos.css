@@ -1,3 +1,13 @@
+.proyectos-container {
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2em;
+  padding-bottom: 3em;
+  width: 80%;
+}
 .proyecto {
   position: relative;
   width: 100%;
@@ -59,17 +69,6 @@
 
 .link-button:hover {
   transform: scale(1.1);
-}
-
-.proyectos-container {
-  font-family: "Inter", sans-serif;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 2em;
-  padding-bottom: 3em;
-  width: 80%;
 }
 
 @media screen and (max-width: 768px) {
