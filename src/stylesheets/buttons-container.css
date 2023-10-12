@@ -25,9 +25,23 @@
   width: 60%;
 }
 
+@media screen and (min-width: 1024px) {
+  .img-container {
+    width: 70px;
+  }
+
+  .img {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .buttons-container {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .img-container {
+    border-radius: 5px;
   }
 }

@@ -114,6 +114,13 @@ li::before {
   content: "-";
 }
 
+@media screen and (min-width: 1024px) {
+  .info h1,
+  p {
+    font-size: larger;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .info-proyect {
     width: 80%;

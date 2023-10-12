@@ -20,6 +20,16 @@
   line-height: 1.5em;
 }
 
+@media screen and (min-width: 1024px) {
+  .biografia h1 {
+    font-size: 3rem;
+  }
+
+  .biografia p {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .biografia {
     margin: 0 auto;

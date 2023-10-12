@@ -31,6 +31,7 @@
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   z-index: 1000;
+  text-align: center;
   font-size: 2em;
   cursor: pointer;
 }
@@ -109,4 +110,32 @@
 
 .linea2 {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+@media screen and (min-width: 1024px) {
+  .hamburger {
+    width: 4em;
+    height: 3em;
+  }
+
+  .hamburger-menu__line {
+    font-size: 3em;
+  }
+
+  .linea {
+    height: 3px;
+  }
+
+  .button-modal {
+    width: 6em;
+    height: 6em;
+  }
+
+  .linea1,
+  .linea2 {
+    width: 100%;
+  }
+}
+  
 }

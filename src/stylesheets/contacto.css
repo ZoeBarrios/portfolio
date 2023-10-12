@@ -73,6 +73,27 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 1024px) {
+  .formulario {
+    width: 50%;
+    max-width: 80%;
+    font-size: larger;
+    margin-bottom: 2em;
+  }
+  .input {
+    height: 2em;
+  }
+
+  .textarea {
+    height: 5em;
+  }
+
+  .button-form {
+    height: 2em;
+    font-size: large;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .formulario {
     width: 90%;
