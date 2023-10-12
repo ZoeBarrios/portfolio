@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+.biografia {
+  width: 100%;
+  color: white;
+}
+
+.biografia h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.biografia p {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .biografia {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

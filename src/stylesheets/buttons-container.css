@@ -1,0 +1,33 @@
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  width: 100%;
+}
+
+.img-container {
+  width: 60px;
+  cursor: pointer;
+  padding: 0.5em;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #e6e6e6;
+  background-color: white;
+}
+
+.img-container:hover {
+  padding-right: 2em;
+}
+
+.img {
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

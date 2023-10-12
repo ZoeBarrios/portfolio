@@ -1,0 +1,147 @@
+.info-proyect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: self-start;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: white;
+  padding-bottom: 3em;
+  margin-top: 2em;
+}
+
+.info-proyect h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-weight: 300;
+  text-align: left;
+}
+
+h2 {
+  font-weight: 300;
+  text-align: left;
+}
+
+.info-proyect img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.title-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.container-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+  gap: 1em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  color: rgb(248, 87, 166);
+  border-radius: 0.5rem;
+  border: 1px solid rgb(248, 87, 166);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  margin-top: 1em;
+}
+
+.link img {
+  width: 100%;
+  box-shadow: none;
+}
+
+.link:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: left;
+  background-color: white;
+  color: #000000;
+  border-radius: 0 0 0.5rem 0.5rem;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+h2 {
+  font-weight: 400;
+  padding: 0;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+  color: rgb(248, 87, 166);
+}
+p {
+  margin-left: 1.5em;
+}
+
+ul {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+}
+
+li::before {
+  content: "-";
+}
+
+@media screen and (max-width: 768px) {
+  .info-proyect {
+    width: 80%;
+    height: 100%;
+    margin-top: 2em;
+    padding: 0;
+  }
+
+  .info {
+    margin-bottom: 2em;
+  }
+
+  .info h2,
+  p {
+    margin-left: 0.5em;
+  }
+
+  .info-proyect h1 {
+    text-align: center;
+  }
+
+  .title-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-links {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
