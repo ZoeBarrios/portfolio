@@ -1,5 +1,7 @@
 import Input from "./input";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Form() {
   function sendEmail(e) {
@@ -15,16 +17,29 @@ export default function Form() {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Mensaje enviado");
+          toast.success("Mensaje enviado correctamente", {
+            position: "top-center",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+          });
         },
         (error) => {
-          console.log(error.text);
+          toast.error("Error al enviar el mensaje", {
+            position: "top-center",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+          });
         }
       );
     e.target.reset();
   }
   return (
     <div className="form-container">
+      <ToastContainer />
       <form className="formulario" onSubmit={sendEmail}>
         <h1>Contactame</h1>
         <Input label="Correo" type="email" name="from_email" />
