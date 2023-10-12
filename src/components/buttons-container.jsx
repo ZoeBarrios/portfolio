@@ -5,17 +5,41 @@ import cv from "/img/cv.png";
 import "../stylesheets/buttons-container.css";
 
 function ButtonsContainer() {
+  function handleDownloadClick() {
+    const url = "/BARRIOS_CV.pdf";
+
+    fetch(url)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "BARRIOS_cv.pdf";
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+      });
+  }
+
+  const handleClick = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="buttons-container">
       <Button
         img={linkedin}
-        url="https://www.linkedin.com/in/zoe-nazarena-barrios-55119525a/"
+        onClick={() =>
+          handleClick(
+            "https://www.linkedin.com/in/zoe-nazarena-barrios-55119525a/"
+          )
+        }
       />
-      <Button img={github} url="https://github.com/ZoeBarrios" />
       <Button
-        img={cv}
-        url="https://drive.google.com/file/d/1lHe7iQ_ARbw8ITkrY0EjEeh3e7oYhUwV/view?usp=drive_link"
+        img={github}
+        onClick={() => handleClick("https://github.com/ZoeBarrios")}
       />
+      <Button img={cv} onClick={handleDownloadClick} />
     </div>
   );
 }

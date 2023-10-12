@@ -1,9 +1,6 @@
-function Button({ img, url }) {
-  const handleClick = () => {
-    window.open(url, "_blank");
-  };
+function Button({ img, onClick }) {
   return (
-    <div className="img-container" onClick={handleClick}>
+    <div className="img-container" onClick={onClick}>
       <img src={img} className="img"></img>
     </div>
   );
