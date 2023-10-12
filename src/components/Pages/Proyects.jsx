@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import useLoader from "../../customHooks/useLoader";
 import Hamburger from "../hamburguer";
-import Loader from "../Loader";
+import Loader from "../loader";
 import Filter from "../filter";
 
 export default function Proyects() {
