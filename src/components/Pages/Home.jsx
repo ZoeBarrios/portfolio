@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import useLoader from "../../customHooks/useLoader";
-import Loader from "../Loader";
+import Loader from "../loader";
 import Biografia from "../biografia";
 import ButtonsContainer from "../buttons-container";
 import Hamburger from "../hamburguer";
