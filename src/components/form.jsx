@@ -6,6 +6,18 @@ import "react-toastify/dist/ReactToastify.css";
 export default function Form() {
   function sendEmail(e) {
     e.preventDefault();
+    for (let i = 0; i < e.target.length - 1; i++) {
+      if (e.target[i].value === "") {
+        toast.error("Todos los campos son obligatorios", {
+          position: "top-center",
+          autoClose: 1000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+        });
+        return;
+      }
+    }
 
     emailjs
       .sendForm(
