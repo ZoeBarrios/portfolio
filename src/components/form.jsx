@@ -1,5 +1,6 @@
 import Input from "./input";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -49,8 +50,20 @@ export default function Form() {
       );
     e.target.reset();
   }
+
+  const containerVariants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className="form-container">
+    <motion.div
+      className="form-container"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+      transition={{ duration: 1, type: "spring", stiffness: 100 }}
+    >
       <ToastContainer />
       <form className="formulario" onSubmit={sendEmail}>
         <h1>Contactame</h1>
@@ -63,6 +76,6 @@ export default function Form() {
 
         <button className="button-form">Enviar</button>
       </form>
-    </div>
+    </motion.div>
   );
 }
