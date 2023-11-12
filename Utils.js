@@ -52,6 +52,14 @@ export const PROYECTOS = {
     img: "/img/proyectos/password.png",
     tecnologias: ["React", "Javascript", "HTML", "CSS"],
   },
+  7: {
+    nombre: "MarketHub",
+    descripcion:
+      "Es una aplicación hecha en React y ASP.NET WEB API que permite comprar y vender tus productos favoritos.",
+    img: "/img/proyectos/markethub.png",
+    github: "https://github.com/ZoeBarrios/MarketHub",
+    tecnologias: ["React", "Javascript", "HTML", "CSS", "ASP.NET", "JWT"],
+  },
 };
 export const TECNOLOGIAS = {
   React: "/img/tecnologias/react.png",
@@ -66,4 +74,5 @@ export const TECNOLOGIAS = {
   TypeScript: "/img/tecnologias/typescript.png",
   Tailwind: "/img/tecnologias/tailwind.png",
   Upstash: "/img/tecnologias/upstash.png",
+  "ASP.NET": "/img/tecnologias/asp.png",
 };
