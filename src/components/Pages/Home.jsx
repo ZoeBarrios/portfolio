@@ -17,18 +17,20 @@ export default function Home() {
   }, []);
   return (
     <div className="home" id="home">
-      <Header />
       <Loader isLoading={isLoading} />
       {!isLoading && (
-        <main className="container">
-          <Biografia />
+        <>
+          <Header />
+          <main className="container">
+            <Biografia />
 
-          <section className="sections">
-            <AboutMe />
-            <Proyects />
-            <Contacto />
-          </section>
-        </main>
+            <section className="sections">
+              <AboutMe />
+              <Proyects />
+              <Contacto />
+            </section>
+          </main>
+        </>
       )}
     </div>
   );
