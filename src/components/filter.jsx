@@ -21,9 +21,9 @@ export default function Filter() {
     buttons.forEach((b) => b.classList.remove("filter-button-active"));
   };
   return (
-    <div>
+    <div id="proyects">
       <section className="filter-container">
-        <h1>Filtros</h1>
+        <h1>Mis proyectos</h1>
         <ListaTecnologias
           onClick={handleSetFilters}
           deleteFilters={deleteFilters}

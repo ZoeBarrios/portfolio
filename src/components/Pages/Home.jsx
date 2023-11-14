@@ -2,8 +2,10 @@ import { useEffect } from "react";
 import useLoader from "../../customHooks/useLoader";
 import Loader from "../loader";
 import Biografia from "../biografia";
-import ButtonsContainer from "../buttons-container";
-import Hamburger from "../hamburguer";
+import Header from "../Header";
+import Proyects from "../Pages/Proyects";
+import AboutMe from "./AboutMe";
+import Contacto from "./Contacto";
 
 export default function Home() {
   const { isLoading, showLoader, hideLoader } = useLoader();
@@ -14,15 +16,20 @@ export default function Home() {
     }, 2000);
   }, []);
   return (
-    <>
+    <div className="home" id="home">
+      <Header />
       <Loader isLoading={isLoading} />
       {!isLoading && (
-        <div className="container">
-          <Hamburger />
+        <main className="container">
           <Biografia />
-          <ButtonsContainer />
-        </div>
+
+          <section className="sections">
+            <AboutMe />
+            <Proyects />
+            <Contacto />
+          </section>
+        </main>
       )}
-    </>
+    </div>
   );
 }

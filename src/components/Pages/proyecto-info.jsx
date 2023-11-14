@@ -3,7 +3,6 @@ import { useRoute } from "wouter";
 import "../../stylesheets/proyecto-info.css";
 import GitHub from "/img/tecnologias/github.png";
 import Web from "/img/tecnologias/web.png";
-import Hamburger from "../hamburguer";
 
 export default function ProyectoInfo() {
   const [match, params] = useRoute("/proyecto/:id");
@@ -13,7 +12,6 @@ export default function ProyectoInfo() {
     PROYECTOS[id];
   return (
     <>
-      <Hamburger />
       <div className="info-proyect">
         <section className="title-section">
           <h1>{nombre}</h1>

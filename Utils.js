@@ -14,7 +14,7 @@ export const PROYECTOS = {
       "Es una api que simula el funcionamiento de un foro y permite controlar el acceso de los usuarios con JWT. Hecho con Java Spring Boot.",
     github: "https://github.com/ZoeBarrios/Alura_Foro",
     img: "/img/proyectos/foro.png",
-    tecnologias: ["Spring Boot", "JWT", "Postman", "MySQL"],
+    tecnologias: ["Spring Boot", "JWT", "MySQL"],
   },
   3: {
     nombre: "Stoom",
@@ -23,7 +23,7 @@ export const PROYECTOS = {
     deploy: "https://stoom-labo.vercel.app/",
     github: "https://github.com/ZoeBarrios/Stoom",
     img: "/img/proyectos/stoom.png",
-    tecnologias: ["Javascript", "HTML", "CSS", "GitHub"],
+    tecnologias: ["Javascript", "HTML", "CSS", "GitHub", "Upstash"],
   },
   4: {
     nombre: "Reloj de Ajedrez",
@@ -58,7 +58,15 @@ export const PROYECTOS = {
       "Es una aplicación hecha en React y ASP.NET WEB API que permite comprar y vender tus productos favoritos.",
     img: "/img/proyectos/markethub.png",
     github: "https://github.com/ZoeBarrios/MarketHub",
-    tecnologias: ["React", "Javascript", "HTML", "CSS", "ASP.NET", "JWT"],
+    tecnologias: [
+      "React",
+      "Javascript",
+      "HTML",
+      "CSS",
+      "ASP.NET",
+      "JWT",
+      "SQL SERVER",
+    ],
   },
 };
 export const TECNOLOGIAS = {
@@ -69,10 +77,10 @@ export const TECNOLOGIAS = {
   "Spring Boot": "/img/tecnologias/spring.png",
   JWT: "/img/tecnologias/jwt.png",
   MySQL: "/img/tecnologias/mysql.png",
-  Postman: "/img/tecnologias/postman.png",
   GitHub: "/img/tecnologias/github.png",
   TypeScript: "/img/tecnologias/typescript.png",
   Tailwind: "/img/tecnologias/tailwind.png",
   Upstash: "/img/tecnologias/upstash.png",
   "ASP.NET": "/img/tecnologias/asp.png",
+  "SQL SERVER": "/img/tecnologias/sqlserver.svg",
 };

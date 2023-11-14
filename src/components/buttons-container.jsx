@@ -26,7 +26,7 @@ function ButtonsContainer() {
   };
 
   return (
-    <div className="buttons-container">
+    <div className="buttons-container" id="buttons-container">
       <Button
         img={linkedin}
         onClick={() =>

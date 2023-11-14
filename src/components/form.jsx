@@ -65,10 +65,12 @@ export default function Form() {
       transition={{ duration: 1, type: "spring", stiffness: 100 }}
     >
       <ToastContainer />
+
       <form className="formulario" onSubmit={sendEmail}>
-        <h1>Contactame</h1>
-        <Input label="Correo" type="email" name="from_email" />
+        <h2>Contactáme</h2>
         <Input label="Nombre" type="text" name="from_name" />
+        <Input label="Correo" type="email" name="from_email" />
+
         <div className="container-input">
           <label htmlFor="mensaje">Mensaje</label>
           <textarea type="" id="mensaje" className="textarea" name="message" />

@@ -58,13 +58,15 @@
 
 .link-button {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1.2em;
-  background: var(--back-color);
   padding: 0.5em 1em;
   border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
   margin-bottom: 10px;
   transition: 0.3s;
+  margin: 10px 0;
 }
 
 .link-button:hover {
