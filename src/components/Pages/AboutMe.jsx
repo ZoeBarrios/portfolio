@@ -15,7 +15,7 @@ export default function AboutMe() {
           </p>
         </div>
         <div className="biografia__container__image">
-          <img src="/public/img/foto.jpeg" alt="yo" />
+          <img src="/img/foto.jpeg" alt="zoe barrios" />
         </div>
       </div>
     </div>
