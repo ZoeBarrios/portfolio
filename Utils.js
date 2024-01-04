@@ -7,7 +7,7 @@ export const PROYECTOS = {
     github: "https://github.com/ZoeBarrios/JuegoMemoria",
     img: "/img/proyectos/memoria.png",
     tecnologias: ["Javascript", "HTML", "CSS"],
-    color: "pink",
+    color: "#fad3cf",
   },
 
   3: {
@@ -18,7 +18,7 @@ export const PROYECTOS = {
     github: "https://github.com/ZoeBarrios/Stoom",
     img: "/img/proyectos/stoom.png",
     tecnologias: ["Javascript", "HTML", "CSS", "GitHub", "Upstash"],
-    color: "blue",
+    color: "#1e549f",
   },
   4: {
     nombre: "Reloj de Ajedrez",
@@ -28,7 +28,7 @@ export const PROYECTOS = {
     github: "https://github.com/ZoeBarrios/chess-clock",
     img: "/img/proyectos/ajedrez.png",
     tecnologias: ["React", "HTML", "CSS"],
-    color: "black",
+    color: "#606470",
   },
   5: {
     nombre: "MyGif",
@@ -38,7 +38,7 @@ export const PROYECTOS = {
     github: "https://github.com/ZoeBarrios/MyGif",
     img: "/img/proyectos/mygif.png",
     tecnologias: ["React", "TypeScript", "Tailwind", "Upstash"],
-    color: "violet",
+    color: "#f8da5b",
   },
   6: {
     nombre: "Generador de contraseñas aleatorias",
@@ -48,7 +48,7 @@ export const PROYECTOS = {
     github: "https://github.com/ZoeBarrios/password-generator",
     img: "/img/proyectos/password.png",
     tecnologias: ["React", "HTML", "CSS"],
-    color: "yellow",
+    color: "#afc5ff",
   },
   7: {
     nombre: "MarketHub",

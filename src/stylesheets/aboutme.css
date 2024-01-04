@@ -20,6 +20,10 @@
 .info-personal-texto {
   width: 80%;
 }
+
+.info-personal-texto p {
+  margin: 0;
+}
 .info-personal-texto h2 {
   font-size: 2em;
   font-weight: 600;
@@ -40,4 +44,21 @@
   border-radius: 10px;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 868px) {
+  .info-personal {
+    flex-direction: column;
+    height: 100%;
+    gap: 0;
+  }
+  .info-personal-texto {
+    width: 100%;
+    font-size: 2em;
+  }
+
+  .biografia__container__image {
+    width: 100%;
+    height: 100%;
+  }
 }

@@ -52,6 +52,8 @@
   .buttons-container {
     flex-direction: row;
     justify-content: space-around;
+    position: absolute;
+    bottom: 0;
   }
 
   .img-container {
