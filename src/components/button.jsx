@@ -1,7 +1,7 @@
-function Button({ img, onClick }) {
+function Button({ icon, onClick }) {
   return (
     <div className="img-container" onClick={onClick}>
-      <img src={img} className="img"></img>
+      <i className={`${icon} icon`}></i>
     </div>
   );
 }

@@ -1,7 +1,4 @@
 import Button from "./button";
-import linkedin from "/img/linkedin.png";
-import github from "/img/github.png";
-import cv from "/img/cv.png";
 import "../stylesheets/buttons-container.css";
 
 function ButtonsContainer() {
@@ -28,7 +25,7 @@ function ButtonsContainer() {
   return (
     <div className="buttons-container" id="buttons-container">
       <Button
-        img={linkedin}
+        icon="fa-brands fa-linkedin-in"
         onClick={() =>
           handleClick(
             "https://www.linkedin.com/in/zoe-nazarena-barrios-55119525a/"
@@ -36,10 +33,10 @@ function ButtonsContainer() {
         }
       />
       <Button
-        img={github}
+        icon="fa-brands fa-github"
         onClick={() => handleClick("https://github.com/ZoeBarrios")}
       />
-      <Button img={cv} onClick={handleDownloadClick} />
+      <Button icon="fa-solid fa-file" onClick={handleDownloadClick} />
     </div>
   );
 }

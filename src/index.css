@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;800&display=swap");
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --back-color: white;
-  --secondary-color: pink;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  --back-color: #212121;
+  --secondary-color: #ff007b;
+  --terciary-color: hsl(331, 100%, 79%);
+  --text-color: #d3d6db;
 }
 
 #root {
@@ -18,8 +21,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #ffa3de;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='12.2' stroke-opacity='0' %3E%3Ccircle fill='%23FFA3DE' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fe9cd9' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23fe96d3' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23fd8fcd' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23fd88c7' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23fc81c1' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23fb7aba' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23fa73b4' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23f96bad' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23f864a6' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23f75c9f' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23f65498' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23f54b90' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23f34289' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23f13781' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23ef2b7a' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23ed1c72' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23EB006A' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: var(--back-color);
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -38,12 +40,13 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 5em;
+
   justify-content: center;
 }
 
 .sections {
   grid-column: 1/3;
+  background: var(--back-color);
 }
 
 @media screen and (max-width: 768px) {

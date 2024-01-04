@@ -6,9 +6,9 @@
 }
 
 .filter-container > h1 {
-  color: white;
+  color: var(--secondary-color);
   font-size: 2em;
-  font-weight: 300;
+  font-weight: 800;
 }
 
 .lista-filtros {
@@ -20,10 +20,14 @@
   margin: 0;
   padding: 0;
   margin-bottom: 2em;
-  background-color: white;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   padding: 2em 0;
+  border: 1px solid var(--secondary-color);
+  background: linear-gradient(
+    90deg,
+    var(--back-color) 0%,
+    var(--secondary-color) 100%
+  );
 }
 
 .button {
@@ -34,9 +38,14 @@
   box-shadow: none;
   border-radius: 5px;
 }
+
 .filter-button {
+  font-size: 40px;
   width: 30px;
   height: 30px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+  transition: all 0.3s ease-in-out;
 }
 
 .filter-button-active {
@@ -44,10 +53,9 @@
 }
 
 .button-delete {
-  background-color: rgba(209, 30, 30, 0.818);
   border: none;
-  color: white;
-  padding: 1em;
+  color: var(--secondary-color);
+  font-size: 1.5em;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -55,7 +63,8 @@
 }
 
 .button-delete:hover {
-  background-color: rgba(209, 30, 30, 0.918);
+  background-color: transparent;
+  color: var(--back-color);
 }
 
 .no-proyects {

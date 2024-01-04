@@ -5,6 +5,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Form() {
+  const SERVICE = import.meta.env.VITE_SERVICE;
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+  const SECRET = import.meta.env.VITE_SECRET;
+  console.log(SERVICE, TEMPLATE_ID, SECRET);
   function sendEmail(e) {
     e.preventDefault();
     for (let i = 0; i < e.target.length - 1; i++) {
@@ -20,34 +24,28 @@ export default function Form() {
       }
     }
 
-    emailjs
-      .sendForm(
-        "service_e2ljh3l",
-        "template_lofw02v",
-        e.target,
-        "qJMY8iT-W4NhWi-CV"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          toast.success("Mensaje enviado correctamente", {
-            position: "top-center",
-            autoClose: 1000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-          });
-        },
-        (error) => {
-          toast.error("Error al enviar el mensaje", {
-            position: "top-center",
-            autoClose: 1000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-          });
-        }
-      );
+    emailjs.sendForm(SERVICE, TEMPLATE_ID, e.target, SECRET).then(
+      (result) => {
+        console.log(result.text);
+        toast.success("Mensaje enviado correctamente", {
+          position: "top-center",
+          autoClose: 1000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+        });
+      },
+      (error) => {
+        console.log(error.text);
+        toast.error("Error al enviar el mensaje", {
+          position: "top-center",
+          autoClose: 1000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+        });
+      }
+    );
     e.target.reset();
   }
 
@@ -67,7 +65,6 @@ export default function Form() {
       <ToastContainer />
 
       <form className="formulario" onSubmit={sendEmail}>
-        <h2>Contactáme</h2>
         <Input label="Nombre" type="text" name="from_name" />
         <Input label="Correo" type="email" name="from_email" />
 

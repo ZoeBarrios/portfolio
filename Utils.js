@@ -7,15 +7,9 @@ export const PROYECTOS = {
     github: "https://github.com/ZoeBarrios/JuegoMemoria",
     img: "/img/proyectos/memoria.png",
     tecnologias: ["Javascript", "HTML", "CSS"],
+    color: "pink",
   },
-  2: {
-    nombre: "Foro Alura",
-    descripcion:
-      "Es una api que simula el funcionamiento de un foro y permite controlar el acceso de los usuarios con JWT. Hecho con Java Spring Boot.",
-    github: "https://github.com/ZoeBarrios/Alura_Foro",
-    img: "/img/proyectos/foro.png",
-    tecnologias: ["Spring Boot", "JWT", "MySQL"],
-  },
+
   3: {
     nombre: "Stoom",
     descripcion:
@@ -24,6 +18,7 @@ export const PROYECTOS = {
     github: "https://github.com/ZoeBarrios/Stoom",
     img: "/img/proyectos/stoom.png",
     tecnologias: ["Javascript", "HTML", "CSS", "GitHub", "Upstash"],
+    color: "blue",
   },
   4: {
     nombre: "Reloj de Ajedrez",
@@ -32,7 +27,8 @@ export const PROYECTOS = {
     deploy: "https://chess-clock-lac.vercel.app/",
     github: "https://github.com/ZoeBarrios/chess-clock",
     img: "/img/proyectos/ajedrez.png",
-    tecnologias: ["React", "Javascript", "HTML", "CSS"],
+    tecnologias: ["React", "HTML", "CSS"],
+    color: "black",
   },
   5: {
     nombre: "MyGif",
@@ -42,6 +38,7 @@ export const PROYECTOS = {
     github: "https://github.com/ZoeBarrios/MyGif",
     img: "/img/proyectos/mygif.png",
     tecnologias: ["React", "TypeScript", "Tailwind", "Upstash"],
+    color: "violet",
   },
   6: {
     nombre: "Generador de contraseñas aleatorias",
@@ -50,7 +47,8 @@ export const PROYECTOS = {
     deploy: "https://password-generator-mauve-tau.vercel.app/",
     github: "https://github.com/ZoeBarrios/password-generator",
     img: "/img/proyectos/password.png",
-    tecnologias: ["React", "Javascript", "HTML", "CSS"],
+    tecnologias: ["React", "HTML", "CSS"],
+    color: "yellow",
   },
   7: {
     nombre: "MarketHub",
@@ -58,29 +56,25 @@ export const PROYECTOS = {
       "Es una aplicación hecha en React y ASP.NET WEB API que permite comprar y vender tus productos favoritos.",
     img: "/img/proyectos/markethub.png",
     github: "https://github.com/ZoeBarrios/MarketHub",
-    tecnologias: [
-      "React",
-      "Javascript",
-      "HTML",
-      "CSS",
-      "ASP.NET",
-      "JWT",
-      "SQL SERVER",
-    ],
+    tecnologias: ["React", "HTML", "CSS", "ASP.NET", "JWT", "SQL SERVER"],
+    color: "#fecea8",
   },
 };
 export const TECNOLOGIAS = {
-  React: "/img/tecnologias/react.png",
-  Javascript: "/img/tecnologias/javascript.png",
-  HTML: "/img/tecnologias/html.png",
-  CSS: "/img/tecnologias/css.png",
-  "Spring Boot": "/img/tecnologias/spring.png",
-  JWT: "/img/tecnologias/jwt.png",
-  MySQL: "/img/tecnologias/mysql.png",
-  GitHub: "/img/tecnologias/github.png",
-  TypeScript: "/img/tecnologias/typescript.png",
-  Tailwind: "/img/tecnologias/tailwind.png",
-  Upstash: "/img/tecnologias/upstash.png",
-  "ASP.NET": "/img/tecnologias/asp.png",
-  "SQL SERVER": "/img/tecnologias/sqlserver.svg",
+  React: {
+    className: "fa-brands fa-react",
+  },
+  Javascript: { className: "fa-brands fa-js" },
+  HTML: {
+    className: "fa-brands fa-html5",
+  },
+  CSS: { className: "fa-brands fa-css3-alt" },
+  JWT: { img: "/img/tecnologias/jwt.svg" },
+
+  GitHub: { className: "fa-brands fa-github" },
+  TypeScript: { img: "/img/tecnologias/typescript.webp" },
+  Tailwind: { img: "/img/tecnologias/tailwind.png" },
+  Upstash: { img: "/img/tecnologias/upstash.png" },
+  "ASP.NET": { img: "/img/tecnologias/asp.svg" },
+  "SQL SERVER": { img: "/img/tecnologias/sqlserver.png" },
 };

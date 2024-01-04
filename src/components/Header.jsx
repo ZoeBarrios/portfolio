@@ -18,25 +18,26 @@ export default function Header() {
         <div className="bar"></div>
       </div>
       <nav className={menuOpen ? "open" : ""}>
+        <span className="zoe-letter">z</span>
         <ul>
           <li>
             <a href="#home" onClick={handleToggleMenu}>
-              Home
+              Inicio
             </a>
           </li>
           <li>
             <a href="#about" onClick={handleToggleMenu}>
-              About me
+              Sobre mí
             </a>
           </li>
           <li>
             <a href="#proyects" onClick={handleToggleMenu}>
-              Projects
+              Proyectos
             </a>
           </li>
           <li>
             <a href="#contact" onClick={handleToggleMenu}>
-              Contact
+              Contacto
             </a>
           </li>
         </ul>

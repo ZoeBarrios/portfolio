@@ -20,12 +20,14 @@ export default function Home() {
       <Loader isLoading={isLoading} />
       {!isLoading && (
         <>
+          <div style={{ height: "5.5rem" }}>&nbsp;</div>
           <Header />
           <main className="container">
             <Biografia />
 
             <section className="sections">
               <AboutMe />
+
               <Proyects />
               <Contacto />
             </section>

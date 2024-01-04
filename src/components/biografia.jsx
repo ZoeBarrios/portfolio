@@ -18,11 +18,15 @@ function Biografia() {
       transition={{ duration: 1, type: "spring", stiffness: 100 }}
     >
       <div className="bio-texto">
-        <h1>¡Hola! Soy Zoe Barrios</h1>
+        <div>
+          <p className="title">Hola, soy Zoe Barrios</p>
+        </div>
         <p>
-          Soy desarrolladora con pasión por aprender y crear cosas nuevas. Soy
-          una persona que le gusta trabajar en equipo y siempre estoy dispuesta
-          a ayudar a los demás.
+          Apasionada por la tecnología, mi objetivo es transformar ideas en
+          productos que impacten positivamente la vida de las personas. Disfruto
+          del desafío de convertir conceptos innovadores en soluciones tangibles
+          y útiles, aprovechando la tecnología para generar un cambio
+          significativo.
         </p>
       </div>
 

@@ -4,7 +4,7 @@ export default function AboutMe() {
     <div className="info-personal-container" id="about">
       <div className="info-personal">
         <div className="info-personal-texto">
-          <h2>About me</h2>
+          <h2>Sobre mí</h2>
           <p>
             Soy una desarrolladora web junior. Me encanta la programación y
             estoy interesada en incursionar tanto en el frontend como en el
@@ -15,7 +15,7 @@ export default function AboutMe() {
           </p>
         </div>
         <div className="biografia__container__image">
-          <img src="/img/foto.jpeg" alt="zoe barrios" />
+          <img src="/img/gif.gif" alt="zoe barrios" />
         </div>
       </div>
     </div>
