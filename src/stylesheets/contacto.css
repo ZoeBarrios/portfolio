@@ -53,7 +53,7 @@ textarea {
   color: white;
   font-size: 14px;
   outline: none;
-  width: 95%;
+  width: 90%;
   border: 1px solid var(--secondary-color);
   transition: background-color 0.3s ease;
 }
@@ -78,8 +78,8 @@ textarea:focus {
   border: none;
   border-radius: 4px;
   padding: 10px;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 800;
   transition: all 0.3s ease;
 }
 
@@ -101,6 +101,7 @@ textarea:focus {
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
+  padding: 0;
   color: var(--text-color);
 }
 

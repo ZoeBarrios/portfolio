@@ -3,6 +3,7 @@ import { useRoute } from "wouter";
 import "../../stylesheets/proyecto-info.css";
 import GitHub from "/img/tecnologias/github.png";
 import Web from "/img/tecnologias/web.webp";
+import BackButton from "../BackButton";
 
 export default function ProyectoInfo() {
   const [match, params] = useRoute("/proyecto/:id");
@@ -12,35 +13,38 @@ export default function ProyectoInfo() {
     PROYECTOS[id];
   return (
     <section style={{ backgroundColor: color }} className="section-proyect">
+      <BackButton />
       <div className="info-proyect">
-        <section className="title-section">
-          <h1>{nombre}</h1>
-          <div className="container-links">
-            {github && (
-              <a
-                href={github}
-                target="_blank"
-                rel="noreferrer"
-                className="link"
-              >
-                <img src={GitHub} />
-              </a>
-            )}
-            {deploy && (
-              <a
-                href={deploy}
-                target="_blank"
-                rel="noreferrer"
-                className="link"
-              >
-                <img src={Web} />
-              </a>
-            )}
-          </div>
-        </section>
-
         <img src={img} className="img-proyecto" />
+
         <section className="info">
+          <section className="title-section">
+            <h1 style={{ color: color }}>{nombre}</h1>
+            <div className="container-links">
+              {github && (
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                  style={{ backgroundColor: color }}
+                >
+                  <img src={GitHub} />
+                </a>
+              )}
+              {deploy && (
+                <a
+                  href={deploy}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                  style={{ backgroundColor: color }}
+                >
+                  <img src={Web} />
+                </a>
+              )}
+            </div>
+          </section>
           <h2 style={{ color: color }}>Sobre el proyecto</h2>
           <p>{descripcion}</p>
           <h2 style={{ color: color }}>Tecnologias utilizadas: </h2>
