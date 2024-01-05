@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { LANGUAJES, TRADUCTION } from "../utils/language";
+import arg from "public/img/arg.png";
+import usa from "public/img/usa.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,10 +53,7 @@ export default function Header() {
                 )
               }
             >
-              <img
-                src={TRADUCTION[language].NAV.LANGUAJES[language]}
-                alt="flag"
-              />
+              <img src={language == LANGUAJES.ENG ? arg : usa} alt="flag" />
             </div>
           </li>
         </ul>
