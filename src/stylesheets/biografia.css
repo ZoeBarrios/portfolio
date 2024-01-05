@@ -154,11 +154,11 @@ a:hover {
 @media screen and (max-width: 580px) {
   .bio-texto {
     width: 90%;
-    margin-bottom: 6em;
+    margin-bottom: 8em;
   }
 
   .bio-texto p {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
   .title {
