@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { LANGUAJES, TRADUCTION } from "../utils/language";
-import arg from "public/img/arg.png";
-import usa from "public/img/usa.png";
+import arg from "/img/arg.png";
+import usa from "/img/usa.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
