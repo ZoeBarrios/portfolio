@@ -53,7 +53,7 @@ export default function Header() {
                 )
               }
             >
-              <img src={language == LANGUAJES.ENG ? arg : usa} alt="flag" />
+              <img src={language == LANGUAJES.ENG ? usa : arg} alt="flag" />
             </div>
           </li>
         </ul>
