@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import ListaDeProyectos from "./lista-de-proyectos";
 import ListaTecnologias from "./lista-tecnologias";
 import "../stylesheets/filter.css";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { TRADUCTION } from "../utils/language";
 
 export default function Filter() {
   const [filters, setFilters] = useState([]);
+  const { language } = useContext(LanguageContext);
 
   const handleSetFilters = (e, filter) => {
     if (!filters.includes(filter.toLowerCase())) {
@@ -23,7 +26,7 @@ export default function Filter() {
   return (
     <div id="proyects">
       <section className="filter-container">
-        <h1>Mis proyectos</h1>
+        <h1>{TRADUCTION[language].PROYECTS.TITLE}</h1>
         <ListaTecnologias
           onClick={handleSetFilters}
           deleteFilters={deleteFilters}

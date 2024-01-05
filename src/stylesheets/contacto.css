@@ -53,7 +53,7 @@ textarea {
   color: white;
   font-size: 14px;
   outline: none;
-  width: 90%;
+  width: 95%;
   border: 1px solid var(--secondary-color);
   transition: background-color 0.3s ease;
 }

@@ -1,9 +1,13 @@
-import { PROYECTOS } from "../../Utils";
+import { PROYECTOS } from "../../Proyects";
 import Proyecto from "./proyecto";
 import "../stylesheets/proyectos-estilos.css";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { useContext } from "react";
+import { TRADUCTION } from "../utils/language";
 
 export default function ListaDeProyectos({ filter = [] }) {
   let proyectosMostrar = PROYECTOS;
+  const { language } = useContext(LanguageContext);
 
   if (filter && filter.length == 1) {
     proyectosMostrar = Object.fromEntries(
@@ -35,7 +39,9 @@ export default function ListaDeProyectos({ filter = [] }) {
           />
         ))
       ) : (
-        <h1 className="no-proyects">No hay proyectos aun...</h1>
+        <h1 className="no-proyects">
+          {Object.values(TRADUCTION[language].PROYECTS.NO_PROYECTS)}
+        </h1>
       )}
     </div>
   );

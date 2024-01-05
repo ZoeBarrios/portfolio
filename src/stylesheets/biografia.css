@@ -109,6 +109,10 @@ a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.btn-language:hover {
+  cursor: pointer;
+}
 @keyframes typing {
   from {
     width: 0;
@@ -211,5 +215,9 @@ a:hover {
     border-radius: 10px;
     margin: 5px;
     transition: all 0.3s ease-in-out;
+  }
+
+  .btn-language:hover {
+    cursor: pointer;
   }
 }

@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 import Biografia from "../biografia";
 import Header from "../Header";
 import Proyects from "../Pages/Proyects";

@@ -1,7 +1,11 @@
 import { Link } from "wouter";
 import Tecnologia from "./tecnologia";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { useContext } from "react";
+import { TRADUCTION } from "../utils/language";
 
 export default function Proyecto({ id, img, tecnologias, name }) {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="proyecto">
       <img src={img} className="img-proyecto" alt={name} />
@@ -12,7 +16,7 @@ export default function Proyecto({ id, img, tecnologias, name }) {
         ))}
       </div>
       <Link to={`/proyecto/${id}`} className="link-button">
-        Ver mas
+        {TRADUCTION[language].BUTTONS.MORE}
       </Link>
     </div>
   );

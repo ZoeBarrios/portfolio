@@ -1,18 +1,23 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../contexts/LanguageContext";
 import "../../stylesheets/contacto.css";
 
 import Form from "../form";
+import { TRADUCTION } from "../../utils/language";
 function Contacto() {
+  const { language } = useContext(LanguageContext);
   return (
     <>
       <div className="contacto-container" id="contact">
         <div className="text-form">
-          <h1 className="contacto-title">Contacto</h1>
+          <h1 className="contacto-title">
+            {TRADUCTION[language].CONTACT.TITLE}
+          </h1>
           <p className="contacto-text">
-            Si quieres ponerte en contacto conmigo, puedes hacerlo a través de
-            este formulario. ¡Estaré encantada de hablar contigo!
+            {TRADUCTION[language].CONTACT.DESCRIPTION}
           </p>
         </div>
-        <Form />
+        <Form language={language} />
       </div>
     </>
   );

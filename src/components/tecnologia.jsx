@@ -1,4 +1,4 @@
-import { TECNOLOGIAS } from "../../Utils";
+import { TECNOLOGIAS } from "../../Proyects";
 
 export default function Tecnologia({ name }) {
   return (

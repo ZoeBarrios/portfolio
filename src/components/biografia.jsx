@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 import "../stylesheets/biografia.css";
 import ButtonsContainer from "./buttons-container";
+import { useContext } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { TRADUCTION } from "../utils/language";
 
 function Biografia() {
+  const { language } = useContext(LanguageContext);
   const containerVariants = {
     hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0 },
@@ -19,15 +23,9 @@ function Biografia() {
     >
       <div className="bio-texto">
         <div>
-          <p className="title">Hola, soy Zoe Barrios</p>
+          <p className="title">{TRADUCTION[language].BIO.TITLE}</p>
         </div>
-        <p>
-          Apasionada por la tecnología, mi objetivo es transformar ideas en
-          productos que impacten positivamente la vida de las personas. Disfruto
-          del desafío de convertir conceptos innovadores en soluciones tangibles
-          y útiles, aprovechando la tecnología para generar un cambio
-          significativo.
-        </p>
+        <p>{TRADUCTION[language].BIO.DESCRIPTION}</p>
       </div>
 
       <ButtonsContainer />

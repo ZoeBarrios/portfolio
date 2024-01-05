@@ -1,18 +1,15 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../contexts/LanguageContext";
 import "../../stylesheets/aboutme.css";
+import { TRADUCTION } from "../../utils/language";
 export default function AboutMe() {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="info-personal-container" id="about">
       <div className="info-personal">
         <div className="info-personal-texto">
-          <h2>Sobre mí</h2>
-          <p>
-            Soy una desarrolladora web junior. Me encanta la programación y
-            estoy interesada en incursionar tanto en el frontend como en el
-            backend. Disfruto aprendiendo cosas nuevas y enfrentándome a nuevos
-            retos. Me considero una persona muy responsable y organizada, con
-            muchas ganas de aprender y mejorar cada día. Mi curiosidad me
-            impulsa a enfrentar nuevos desafíos con entusiasmo.
-          </p>
+          <h2>{TRADUCTION[language].NAV.ABOUT}</h2>
+          <p>{TRADUCTION[language].ABOUT.DESCRIPTION}</p>
         </div>
         <div className="biografia__container__image">
           <img src="/img/gif.gif" alt="zoe barrios" />

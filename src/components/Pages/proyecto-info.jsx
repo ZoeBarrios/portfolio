@@ -1,16 +1,19 @@
-import { PROYECTOS } from "../../../Utils";
+import { PROYECTOS } from "../../../Proyects";
 import { useRoute } from "wouter";
 import "../../stylesheets/proyecto-info.css";
 import GitHub from "/img/tecnologias/github.png";
 import Web from "/img/tecnologias/web.webp";
 import BackButton from "../BackButton";
+import { LanguageContext } from "../../contexts/LanguageContext";
+import { useContext } from "react";
+import { TRADUCTION } from "../../utils/language";
 
 export default function ProyectoInfo() {
   const [match, params] = useRoute("/proyecto/:id");
   const id = params.id;
+  const { language } = useContext(LanguageContext);
 
-  const { nombre, descripcion, deploy, github, img, tecnologias, color } =
-    PROYECTOS[id];
+  const { nombre, deploy, github, img, tecnologias, color } = PROYECTOS[id];
   return (
     <section style={{ backgroundColor: color }} className="section-proyect">
       <BackButton />
@@ -45,9 +48,11 @@ export default function ProyectoInfo() {
               )}
             </div>
           </section>
-          <h2 style={{ color: color }}>Sobre el proyecto</h2>
-          <p>{descripcion}</p>
-          <h2 style={{ color: color }}>Tecnologias utilizadas: </h2>
+          <h2 style={{ color: color }}>{nombre}</h2>
+          <p>{PROYECTOS[id].descripcion[language]}</p>
+          <h2 style={{ color: color }}>
+            {TRADUCTION[language].PROYECTS.SECOND_TITLE}:{" "}
+          </h2>
           <ul className="list-techs-used">
             {tecnologias.map((tecnologia) => (
               <li className="tecnologia" key={tecnologia}>
