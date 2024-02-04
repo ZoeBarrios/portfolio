@@ -172,7 +172,7 @@ a:hover {
     animation: none;
   }
   .zoe-letter {
-    font-size: 2rem;
+    display: none;
   }
   .header nav {
     display: none;
