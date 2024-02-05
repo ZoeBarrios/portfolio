@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import Filter from "../Filter";
+import Filter from "../filter";
 import ProyectsList from "../ProyectsList";
 
 export default function Proyects() {
