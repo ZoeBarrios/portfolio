@@ -1,6 +1,6 @@
 import { PROYECTOS } from "../../Proyects";
-import Proyecto from "./proyecto";
-import "../stylesheets/proyectos-estilos.css";
+import Proyect from "./Proyect";
+import "../stylesheets/proyects.css";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { useContext } from "react";
 import { TRADUCTION } from "../utils/language";
@@ -30,7 +30,7 @@ export default function ListaDeProyectos({ filter = [] }) {
     <div className="proyectos-container">
       {Object.keys(proyectosMostrar).length != 0 ? (
         Object.entries(proyectosMostrar).map(([key, value]) => (
-          <Proyecto
+          <Proyect
             id={key}
             img={value.img}
             name={value.nombre}

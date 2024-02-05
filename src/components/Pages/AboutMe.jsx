@@ -5,7 +5,7 @@ import { TRADUCTION } from "../../utils/language";
 export default function AboutMe() {
   const { language } = useContext(LanguageContext);
   return (
-    <div className="info-personal-container" id="about">
+    <div className="info-personal-container animate__fadeIn" id="about">
       <div className="info-personal">
         <div className="info-personal-texto">
           <h2>{TRADUCTION[language].NAV.ABOUT}</h2>

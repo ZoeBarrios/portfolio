@@ -49,6 +49,24 @@ body::-webkit-scrollbar {
   background: var(--back-color);
 }
 
+.animate__fadeIn {
+  animation: fadeIn 5s ease both;
+  animation-timeline: view();
+  animation-range-start: 5%;
+  animation-range-end: 70%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .container {
     display: flex;

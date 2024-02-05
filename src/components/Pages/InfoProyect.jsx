@@ -1,6 +1,6 @@
 import { PROYECTOS } from "../../../Proyects";
 import { useRoute } from "wouter";
-import "../../stylesheets/proyecto-info.css";
+import "../../stylesheets/info-proyect.css";
 import GitHub from "/img/tecnologias/github.png";
 import Web from "/img/tecnologias/web.webp";
 import BackButton from "../BackButton";

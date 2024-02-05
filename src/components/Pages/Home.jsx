@@ -1,4 +1,4 @@
-import Biografia from "../biografia";
+import Biography from "../Biography";
 import Header from "../Header";
 import Proyects from "../Pages/Proyects";
 import AboutMe from "./AboutMe";
@@ -10,11 +10,10 @@ export default function Home() {
       <div style={{ height: "5.5rem" }}>&nbsp;</div>
       <Header />
       <main className="container">
-        <Biografia />
+        <Biography />
 
         <section className="sections">
           <AboutMe />
-
           <Proyects />
           <Contacto />
         </section>

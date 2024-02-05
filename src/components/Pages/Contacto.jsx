@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { LanguageContext } from "../../contexts/LanguageContext";
-import "../../stylesheets/contacto.css";
+import "../../stylesheets/contact.css";
+import Form from "../Form";
 
-import Form from "../form";
 import { TRADUCTION } from "../../utils/language";
 function Contacto() {
   const { language } = useContext(LanguageContext);

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import "../stylesheets/biografia.css";
-import ButtonsContainer from "./buttons-container";
+import "../stylesheets/biography.css";
+import ButtonsContainer from "./ButtonsContainer";
 import { useContext } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { TRADUCTION } from "../utils/language";

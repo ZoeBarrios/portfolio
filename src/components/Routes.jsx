@@ -1,6 +1,6 @@
 import { Route } from "wouter";
 import Home from "./Pages/Home";
-import ProyectoInfo from "./Pages/proyecto-info";
+import ProyectoInfo from "./Pages/InfoProyect";
 
 function Routes() {
   return (
