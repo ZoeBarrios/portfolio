@@ -1,4 +1,4 @@
-import Input from "./Input";
+import Input from "./input";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { TRADUCTION } from "../utils/language";
