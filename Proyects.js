@@ -86,6 +86,20 @@ export const PROYECTOS = {
     tecnologias: ["React", "HTML", "CSS", "ASP.NET", "JWT", "SQL SERVER"],
     color: "#fecea8",
   },
+  8: {
+    nombre: "Adoptando Sonrisas",
+    descripcion: {
+      [LANGUAJES.ESP]:
+        "Adoptando Sonrisas se centró en la creación de una plataforma que facilitara el proceso de adopción para diversas organizaciones locales. Esta plataforma permite el registro de organizaciones, ofreciendo una solución integral que organiza la información tanto para potenciales adoptantes como para las propias organizaciones, que pueden gestionar sus actividades diarias desde un único lugar.",
+      [LANGUAJES.ENG]:
+        "Adoptando Sonrisas focused on creating a platform that would facilitate the adoption process for various local organizations. This platform allows the registration of organizations, offering a comprehensive solution that organizes information for both potential adopters and the organizations themselves, which can manage their daily activities from a single place.",
+    },
+    img: "/img/proyectos/adoptando.png",
+    github: "https://github.com/ZoeBarrios/AdoptandoSonrisas",
+    deploy: "https://adoptando-sonrisas.vercel.app/",
+    tecnologias: ["React", "Tailwind", "JWT", "MySQL", "Node", "Figma"],
+    color: "orange",
+  },
 };
 export const TECNOLOGIAS = {
   React: {
@@ -97,7 +111,9 @@ export const TECNOLOGIAS = {
   },
   CSS: { className: "fa-brands fa-css3-alt" },
   JWT: { img: "/img/tecnologias/jwt.svg" },
-
+  MySQL: { img: "/img/tecnologias/mysql.png" },
+  Node: { img: "/img/tecnologias/node.png" },
+  Figma: { img: "/img/tecnologias/figma.png" },
   GitHub: { className: "fa-brands fa-github" },
   TypeScript: { img: "/img/tecnologias/typescript.webp" },
   Tailwind: { img: "/img/tecnologias/tailwind.png" },
