@@ -5,7 +5,7 @@ import GitHub from "/img/tecnologias/github.png";
 import Web from "/img/tecnologias/web.webp";
 import BackButton from "../BackButton";
 import { LanguageContext } from "../../contexts/LanguageContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { TRADUCTION } from "../../utils/language";
 
 export default function ProyectoInfo() {
@@ -14,6 +14,11 @@ export default function ProyectoInfo() {
   const { language } = useContext(LanguageContext);
 
   const { nombre, deploy, github, img, tecnologias, color } = PROYECTOS[id];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section style={{ backgroundColor: color }} className="section-proyect">
       <BackButton />
